@@ -456,6 +456,11 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
   font-size: 13px;
 }
 
+/* Mobile nav tools — hidden on desktop, shown inside hamburger menu on mobile */
+.mobile-nav-tools {
+  display: none;
+}
+
 .menu-btn {
   display: none;
   background: none;
@@ -2341,8 +2346,18 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
     color: var(--gold-accent) !important;
   }
 
-  .header-actions .btn:not(.theme-toggle-btn) {
+  /* On mobile: hide entire header-actions bar (theme btn is in mobile menu instead) */
+  .header-actions {
     display: none;
+  }
+
+  /* On mobile: show tools row inside the hamburger nav */
+  .mobile-nav-tools {
+    display: flex;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    gap: 10px;
+    width: 100%;
   }
 
   .brand-text .subtitle,
