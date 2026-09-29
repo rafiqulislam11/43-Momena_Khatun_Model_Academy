@@ -375,8 +375,8 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap !important;
-  min-height: 72px;
-  gap: 16px;
+  min-height: 90px;
+  gap: 20px;
 }
 
 .brand {
@@ -387,8 +387,8 @@ button, input, select, textarea {
   white-space: nowrap !important;
 }
 .brand img {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
   flex-shrink: 0;
@@ -399,7 +399,7 @@ button, input, select, textarea {
   white-space: nowrap !important;
 }
 .brand-text .title {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 800;
   color: var(--navy-primary);
   letter-spacing: -0.3px;
@@ -410,12 +410,12 @@ nav#mainNav {
   display: flex;
   align-items: center;
   flex-wrap: nowrap !important;
-  gap: 12px;
+  gap: 14px;
   white-space: nowrap !important;
   flex-shrink: 1;
 }
 nav#mainNav a {
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 600;
   color: #334155;
   position: relative;
@@ -2288,7 +2288,7 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
   nav#mainNav {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 90px;
     left: 0;
     right: 0;
     width: 100%;
@@ -2299,7 +2299,7 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
     border-bottom: 3px solid var(--gold-accent);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
     white-space: normal;
-    max-height: calc(100vh - 72px);
+    max-height: calc(100vh - 90px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 1000;
