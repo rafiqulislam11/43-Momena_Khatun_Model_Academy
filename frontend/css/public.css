@@ -375,10 +375,11 @@ button, input, select, textarea {
   background: rgba(255, 255, 255, 0.99);
 }
 
+/* Topbar and Top Strip inherit site-wide unified container width (1200px) for perfect grid alignment */
 .topbar .container,
 .top-strip .container {
-  width: min(1560px, 96%);
-  max-width: 1560px;
+  width: min(1200px, 92%);
+  max-width: 1200px;
 }
 
 .navwrap {
@@ -422,16 +423,16 @@ nav#mainNav {
   display: flex;
   align-items: center;
   flex-wrap: nowrap !important;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap !important;
   flex-shrink: 1;
 }
 nav#mainNav a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #334155;
   position: relative;
-  padding: 8px 4px;
+  padding: 6px 3px;
   white-space: nowrap !important;
   display: inline-block;
   transition: color var(--transition-fast);
@@ -459,13 +460,21 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
   align-items: center;
   flex-shrink: 0;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap;
 }
 .header-actions .btn {
   white-space: nowrap;
-  padding: 8px 14px;
-  font-size: 13px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  border-radius: var(--radius-sm);
+}
+/* Portal login button: compact & understated in navbar */
+.header-actions .btn-navy {
+  padding: 6px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 /* Mobile nav tools — hidden on desktop, shown inside hamburger menu on mobile */
@@ -2274,20 +2283,17 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
 /* 1. Large Laptops & Desktops (< 1360px) */
 @media (max-width: 1360px) {
   nav#mainNav {
-    gap: 6px;
+    gap: 5px;
   }
   nav#mainNav a {
-    font-size: 12.5px;
-    padding: 6px 2px;
+    font-size: 12px;
+    padding: 5px 2px;
   }
   .brand-text .title {
-    font-size: 16px;
-  }
-  .header-actions #openAdmissionModalBtn {
-    display: none;
+    font-size: 15.5px;
   }
   .header-actions {
-    gap: 8px;
+    gap: 6px;
   }
 }
 
