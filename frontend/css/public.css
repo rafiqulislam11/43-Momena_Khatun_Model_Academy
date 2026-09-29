@@ -366,8 +366,8 @@ button, input, select, textarea {
 
 .topbar .container,
 .top-strip .container {
-  width: min(1560px, 98%);
-  max-width: 1560px;
+  width: min(1200px, 92%);
+  max-width: 1200px;
 }
 
 .navwrap {
@@ -375,8 +375,8 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap !important;
-  min-height: 90px;
-  gap: 20px;
+  min-height: 80px;
+  gap: 14px;
 }
 
 .brand {
@@ -387,8 +387,8 @@ button, input, select, textarea {
   white-space: nowrap !important;
 }
 .brand img {
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
   flex-shrink: 0;
@@ -399,7 +399,7 @@ button, input, select, textarea {
   white-space: nowrap !important;
 }
 .brand-text .title {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 800;
   color: var(--navy-primary);
   letter-spacing: -0.3px;
@@ -410,16 +410,16 @@ nav#mainNav {
   display: flex;
   align-items: center;
   flex-wrap: nowrap !important;
-  gap: 14px;
+  gap: 10px;
   white-space: nowrap !important;
   flex-shrink: 1;
 }
 nav#mainNav a {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #334155;
   position: relative;
-  padding: 8px 3px;
+  padding: 8px 4px;
   white-space: nowrap !important;
   display: inline-block;
   transition: color var(--transition-fast);
@@ -2262,14 +2262,14 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
 /* 1. Large Laptops & Desktops (< 1360px) */
 @media (max-width: 1360px) {
   nav#mainNav {
-    gap: 9px;
+    gap: 6px;
   }
   nav#mainNav a {
-    font-size: 13px;
+    font-size: 12.5px;
     padding: 6px 2px;
   }
   .brand-text .title {
-    font-size: 16.5px;
+    font-size: 16px;
   }
 }
 
@@ -2288,7 +2288,7 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
   nav#mainNav {
     display: none;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0;
     right: 0;
     width: 100%;
@@ -2299,7 +2299,7 @@ nav#mainNav a:hover::after, nav#mainNav a.active::after {
     border-bottom: 3px solid var(--gold-accent);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
     white-space: normal;
-    max-height: calc(100vh - 90px);
+    max-height: calc(100vh - 80px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 1000;

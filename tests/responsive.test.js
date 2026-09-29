@@ -55,7 +55,7 @@ assert(publicCss.includes('@media (max-width: 360px)'), 'public.css must have ul
 console.log('✅ 6. Public Website: Breakpoints strictly ordered in descending hierarchy (1360 -> 1180 -> 1080 -> 768 -> 600 -> 480 -> 360).');
 
 // 7. Verify Mobile Drawer Scrollability in public.css
-assert(publicCss.includes('max-height: calc(100vh - 72px);'), 'public.css mobile nav must have max-height constraint');
+assert(publicCss.includes('max-height: calc(100vh - 80px);') || publicCss.includes('max-height: calc(100vh - 72px);'), 'public.css mobile nav must have max-height constraint');
 assert(publicCss.includes('overflow-y: auto;'), 'public.css mobile nav must be vertically scrollable on short screens');
 assert(publicCss.includes('-webkit-overflow-scrolling: touch;'), 'public.css mobile nav must support smooth iOS momentum touch scrolling');
 console.log('✅ 7. Mobile Drawer: Vertical touch scrollability and viewport boundary guaranteed.');

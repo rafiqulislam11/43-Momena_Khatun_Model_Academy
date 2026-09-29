@@ -361,8 +361,8 @@ button, input, select, textarea {
 
 .topbar .container,
 .top-strip .container {
-  width: min(1560px, 98%);
-  max-width: 1560px;
+  width: min(1200px, 92%);
+  max-width: 1200px;
 }
 
 .navwrap {
@@ -370,8 +370,8 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap !important;
-  min-height: 72px;
-  gap: 16px;
+  min-height: 80px;
+  gap: 14px;
 }
 
 .brand {
