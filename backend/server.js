@@ -13,8 +13,9 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(requestLogger);
 
-// Serve Frontend Static Assets & Web Pages
+// Serve Frontend Static Assets & Web Pages (frontend directory + project root fallback)
 app.use(express.static(path.resolve(__dirname, '../frontend')));
+app.use(express.static(path.resolve(__dirname, '..')));
 
 // API Routes
 app.use('/api/system', require('./routes/systemRoutes'));
